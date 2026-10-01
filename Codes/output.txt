@@ -1,0 +1,4 @@
+Hello, C File Writer!
+This file was created using C.
+Student Name: Amey
+Course: C Programming
