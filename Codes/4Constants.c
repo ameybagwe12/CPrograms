@@ -11,3 +11,11 @@ int main(void)
 
 	return 0;
 }
+
+/*
+printf("%d", 5);	5	Default integer format
+printf("%2d", 5);	5	Width 2, one leading space
+printf("%3d", 5);	5	Width 3, two leading spaces
+printf("%2d", 25);	25	Already 2 characters wide
+printf("%2d", 125);	125	Width is a minimum, not a limit
+*/
