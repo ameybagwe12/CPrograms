@@ -9,7 +9,7 @@ typedef struct {
 
 int main() {
     Student s1[2]; // Declare an array of 2 Student structures
-    for (int i=0; i< 2; i++) {
+    for (int i=0; i< sizeof(s1)/sizeof(Student); i++) {
         printf("\n-----------------------------");
         printf("Enter name for student: ");
         scanf("%49s", s1[i].name); // Read name into the structure
@@ -19,7 +19,7 @@ int main() {
         scanf(" %c", &s1[i].grade); // Read grade into the structure
     }
 
-    for (int i=0; i< 2; i++) {
+    for (int i=0; i< sizeof(s1)/sizeof(Student); i++) {
         printf("\nDetails of student %d:\n", i+1);
         printf("Name: %s\n", s1[i].name);
         printf("Age: %d\n", s1[i].age);
